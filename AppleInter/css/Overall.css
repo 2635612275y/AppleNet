@@ -1,0 +1,770 @@
+
+*,ul,li,a,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.header-first{
+    background-color: #444444;
+    padding-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-first p{
+    color:#A8A8AA;
+    padding-bottom: 10px;
+    padding-left: 1150px;
+    font-size: small;
+}
+.header-navigation{
+    position: fixed;
+    top: 0px;right: 0;left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.online-buy{
+    text-align: center;
+    line-height: 50px;
+}
+.header-area .header-top .container{
+    height: 40px;
+    background-color: #242424;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-area .header-top .container .menu-list>li a{
+    color: #CFCFCF;
+    line-height: 40px;
+}
+.header-area .header-top .container .menu-list{
+    text-align: center;
+}
+.header-area .header-top .container .menu-list>li{
+    display: inline-block;
+    margin-right: 100px;
+    position: relative;
+}
+/*Mac*/
+.header-area .header-top .container .menu-list>li .drop-list1{
+    position: absolute;
+    display: none;
+    padding-left: 5px;
+    background-color: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    left: -78px;
+}
+.header-area .header-top .container .menu-list>li :hover{
+    color: white;
+}
+.header-area .header-top .container .menu-list>li .drop-list1 li{
+    color: #2C80D5;
+}
+.header-area .header-top .container .menuMac.menu2.active .drop-list1 {
+    display: block;
+}
+.header-area .header-top .container .menu-list>li .drop-list1 a:hover{
+    font-size: 15px;
+    color: #2997FF;
+}
+.header-area .header-top .container .menu-list .drop-list1 .mac-list{
+    display: inline-block;
+    width: 1000px;
+    height: 68px;
+    text-align: center;
+}
+.header-area .header-top .container .menu-list .drop-list1 .mac-list a{
+    font-size: 12px;
+    color: #242424;
+    margin-right: 120px;
+}
+/*iPad*/
+.header-area .header-top .container .menu-list>li .drop-list2{
+    position: absolute;
+    top: 40px;
+    display: none;
+    background-color: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    left: -215px;
+}
+.header-area .header-top .container  .menu-list>li .drop-list2 li{
+    color: #2C80D5;
+}
+.header-area .header-top .container  .menuPad.menu2.active .drop-list2{
+    display: block;
+}
+.header-area .header-top .container .menu-list>li .drop-list2 a:hover{
+    font-size: 15px;
+    color: #2997FF;
+}
+.header-area .header-top .container .menu-list .drop-list2 .iPad-list{
+    display: inline-block;
+    width: 1000px;
+    height: 68px;
+    text-align: center;
+    vertical-align: top;
+}
+.header-area .header-top .container .menu-list .drop-list2 .iPad-list a {
+    font-size: 12px;
+    color: #242424;
+    margin-right: 120px;
+}
+/*iPhone*/
+.header-area .header-top .container .menu-list>li .drop-list3{
+    position: absolute;
+    top: 40px;
+    text-align: left;
+    display: none;
+    padding-left: 5px;
+    background-color: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    left: -355px;
+}
+.header-area .header-top .container .menu-list>li .drop-list3 li{
+    color: #2C80D5;
+}
+.header-area .header-top .container  .menuPhone.menu2.active .drop-list3{
+    display: block;
+}
+.header-area .header-top .container .menu-list>li .drop-list3 a:hover{
+    font-size: 15px;
+    color: #2997FF;
+}
+.header-area .header-top .container .menu-list .drop-list3 .iPhone-list{
+    display: inline-block;
+    width: 1000px;
+    height: 69px;
+    text-align: center;
+    vertical-align: top;
+}
+.header-area .header-top .container .menu-list .drop-list3 .iPhone-list a {
+    font-size: 12px;
+    color: #F5F5F7;
+    margin-right: 80px;
+}
+/*Watch*/
+.header-area .header-top .container .menu-list>li .drop-list4{
+    position: absolute;
+    top: 40px;
+    text-align: left;
+    display: none;
+    padding-left: 5px;
+    background-color: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    left: -512px;
+}
+.header-area .header-top .container .menu-list>li .drop-list4 li{
+    color: #2C80D5;
+}
+.header-area .header-top .container  .menuWatch.menu2.active .drop-list4{
+    display: block;
+}
+.header-area .header-top .container .menu-list>li .drop-list4 a:hover{
+    font-size: 15px;
+    color: #2997FF;
+}
+.header-area .header-top .container .menu-list .drop-list4 .watch-list{
+    display: inline-block;
+    width: 1000px;
+    height: 69px;
+    vertical-align: top;
+}
+.header-area .header-top .container .menu-list .drop-list4 .watch-list a {
+    font-size: 12px;
+    color: #242424;
+    margin-right: 70px;
+}
+/*Music*/
+.header-area .header-top .container .menu-list>li .drop-list5{
+    position: absolute;
+    top: 40px;
+    min-width: 100px;
+    text-align: left;
+    display: none;
+    padding-left: 5px;
+    background-color: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    left: -666px;
+}
+.header-area .header-top .container .menu-list>li .drop-list5 li a{
+    color: grey;
+}
+.header-area .header-top .container .menu-list>li .drop-list5 li{
+    color: #2C80D5;
+}
+.header-area .header-top .container  .menuMusic.menu2.active .drop-list5{
+    display: block;
+}
+.header-area .header-top .container .menu-list>li .drop-list5 a:hover{
+    font-size: 15px;
+    color: #2997FF;
+}
+.header-area .header-top .container .menu-list .drop-list5 .music-list{
+    display: inline-block;
+    width: 1000px;
+    height: 69px;
+    vertical-align: top;
+}
+.header-area .header-top .container .menu-list .drop-list5 .music-list a{
+    font-size: 12px;
+    color: #F5F5F7;
+    margin-right: 50px;
+}
+/*搜索框*/
+input::-webkit-input-placeholder {
+    /* placeholder颜色 */
+    color: #aab2bd;
+    /* placeholder字体大小 */
+    font-size: 17px;
+}
+.search-box {
+    position: fixed;
+    top: 120px;
+    left: 13%;
+    transform: translate( -50%,-50%);
+    background: #68686C;
+    height: 40px;
+    border-radius: 30px; /*圆角边框*/
+    padding: 10px;
+    z-index: 1000;
+}
+.search-box:hover> .search-text {
+    width: 300px;
+}
+.search-box:hover> .search-btn {
+    background: white;
+    color: #26087b;
+}
+.search-btn {
+
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #68686C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.search-text {
+    border: none;
+    background: #00000000;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 17px;
+    font-family: 微软雅黑;
+    transition: 0.5s;
+    line-height: 40px;
+    width:  0px;
+
+}
+/*购物袋*/
+.header-area .header-top .container .menu-list>li .drop-list6{
+    position: absolute;
+    top: 40px;
+    min-width: 100px;
+    text-align: left;
+    display: none;
+    padding-left: 5px;
+    left: -18px;
+}
+.header-area .header-top .container .menu-list>li .drop-list6 li a{
+    color: #2997FF;
+}
+.header-area .header-top .container .menu-list>li .drop-list6 li{
+    color: #2997FF;
+}
+.header-area .header-top .container  .menuShop.menu2.active .drop-list6{
+    display: block;
+}
+.header-area .header-top .container .menu-list>li .drop-list6 li:hover{
+    color: pink;
+}
+.header-area .header-top .container .menu-list>li .drop-list6 a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    color: pink;
+}
+.online-buy,.body1{
+    background-color: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+}
+.online-buy a:hover{
+    text-decoration: underline ;
+}
+.apple-watch-text a:hover{
+    text-decoration: underline;
+}
+.apple-se-text a:hover{
+    text-decoration: underline;
+}
+.apple-ios-text a:hover{
+    text-decoration: underline;
+}
+.apple-ipad-text a:hover{
+    text-decoration: underline;
+}
+.apple-mac-text a:hover{
+    text-decoration: underline;
+}
+.apple-music-text a:hover{
+    text-decoration: underline;
+}
+.apple-iphone-text a:hover {
+    text-decoration: underline;
+}
+/*轮播部分*/
+.slides-show{
+    font-size: 0;
+}
+/*        .slides-show ul li{
+            display: inline-block;
+            border: 0px;
+        }*/
+/*中间内容部分*/
+.iphone12pro{
+    display: table-cell;
+    text-align: center;
+    width: 2000px;
+    height: 700px;
+    background-color: black;
+}
+.iphone12pro .apple-iphone12-big{
+    font-size: 55px;
+    padding-top: 40px;
+    color: #F5F5F7;
+}
+.iphone12pro .apple-iphone12-medium{
+    font-weight: normal;
+    font-family: 微软雅黑;
+    font-size: 25px;
+    color: #F5F5F7;
+}
+.iphone12pro .apple-iphone-text{
+    line-height: 60px;
+}
+.iphone12pro .online-buy-color{
+    color: #2997FF;
+    font-size: 20px;
+}
+.iphone12pro .apple-iphone12-small1{
+    color: #F5F5F7;
+    font-size: 20px;
+}
+.iphone12pro .apple-iphone12-small{
+    font-weight: normal;
+    color: #A1A1A6;
+    font-size: 18px;
+}
+
+.iphone12{
+    display: table-cell;
+    text-align: center;
+    width: 2000px;
+    height: 700px;
+    background-color: #FBFBFD;
+}
+.iphone12 .apple-iphone12-big{
+    font-size: 55px;
+    padding-top: 40px;
+    color: #1D1D1F;
+}
+.iphone12 .apple-iphone12-medium{
+    font-weight: normal;
+    font-family: 微软雅黑;
+    font-size: 25px;
+    color: #1D1D1F;
+}
+.iphone12 .apple-iphone-text{
+    line-height: 60px;
+}
+.iphone12 .online-buy-color{
+    color: #1866CD;
+    font-size: 20px;
+}
+.iphone12 .apple-iphone12-small1{
+    color: #1D1D1F;
+    font-size: 20px;
+}
+.iphone12 .apple-iphone12-small{
+    font-weight: normal;
+    color: #A1A1A6;
+    font-size: 18px;
+}
+.mini{
+    display: table-cell;
+    text-align: center;
+    width: 2000px;
+    height: 600px;
+    background-color: #FBFBFD;
+}
+.mini .online-buy-color{
+    line-height: 120px;
+    color: #1866CD;
+    font-size: 20px;
+}
+.image-one{
+    display: table-cell;/*作为一个表格单元格显示*/
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    height: 600px;
+    background-color: black;
+    float: left;
+}
+.image-one .apple-watch-big{
+    padding-top: 50px;
+    color: white;
+}
+.image-one .apple-watch-series6{
+    font-size: 10px;
+    color: #BF1C27;
+    letter-spacing: 2px;
+}
+.image-one .apple-watch-small{
+    color: white;
+}
+.image-one .apple-watch-text{
+    line-height: 60px;
+}
+.image-one .online-buy-color{
+    color: #06c;
+}
+.image-two{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    height: 600px;
+    background-color: #FBFBFD;
+    float: left;
+}
+.image-two .apple-se-big{
+    padding-top: 50px;
+    color: black;
+}
+.image-two .apple-se-se{
+    font-family: 微软雅黑;
+    font-size: 10px;
+    color: #BF1C27;
+    letter-spacing: 2px;
+}
+.image-two .apple-se-small{
+    color: #000000;
+    font-weight: normal;
+}
+.image-two .apple-se-text{
+    padding-top: 10px;
+}
+.image-two .online-buy-color{
+    color: #06c;
+}
+.image-three{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    height: 600px;
+    background-color: #FBFBFD;
+    float: left;
+}
+.image-three .apple-ios-big{
+    padding-top: 10px;
+    color: black;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.image-three .apple-ios-small{
+    color: #000000;
+    font-weight: normal;
+}
+.image-three .apple-ios-text{
+    padding-top: 10px;
+}
+.image-three .online-buy-color{
+    color: #06c;
+}
+.image-four{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    height: 600px;
+    background-color: #FBFBFD;
+    float: left;
+}
+.image-four .apple-ipad-big{
+    padding-top: 20px;
+    font-weight: normal;
+    color: black;
+    font-size: 20px;
+}
+.image-four .online-buy-color{
+    padding-top: 60px;
+    color: #06c;
+}
+.image-four .apple-ipad-text{
+    padding-top: 25px;
+}
+.image-five{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    height: 600px;
+    background-image: url("https://www.apple.com.cn/home/promos/back-to-school/images/tile__cauwwcyyn9hy_medium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+.image-five .apple-mac-big{
+    padding-top: 50px;
+    color: black;
+    letter-spacing: 2px;
+}
+.image-five .apple-mac-small{
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+.image-five .apple-mac-text{
+    padding-top: 25px;
+}
+.image-five .online-buy-color{
+    color: #06c;
+}
+.image-six{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    height: 600px;
+    background-image: url("https://www.apple.com.cn/home/promos/apple-music-katy-perry/images/apple_music__gdfamywhn6ye_medium.jpg");
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-six .apple-music-big{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: 楷体;
+    padding-top: 340px;
+}
+.image-six .apple-music-small{
+    padding-top: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 微软雅黑;
+}
+.image-six .apple-music-text{
+    padding-top: 20px;
+}
+.image-six .online-buy-color{
+    color: #FFFFFF;
+}
+.end{
+    background-color: #F5F5F7;
+    display: table-cell;
+    text-align: center;
+    width: 1920px;
+    height: 570px;
+}
+.title{
+    font-size: 12px;
+}
+.end .end-center{
+    width: 1100px;
+    height: 540px;
+    margin-left: 250px;
+}
+.end .end-center .size{
+    height: 365px;
+}
+.end .end-center .end-first ul li{
+    padding: 17px 0 11px;
+    color: #86868b;
+    text-align: left;
+    font-size: 12px;
+}
+.end .end-center .choose-buy{
+    width: 220px;
+    font-size: 12px;
+    text-align: left;
+    float: left;
+}
+.end .end-center .se-cou{
+    width: 220px;
+    float: left;
+}
+.end .end-center .servers{
+    font-size: 12px;
+    text-align: left;
+}
+.end .end-center .counts{
+    font-size: 12px;
+    text-align: left;
+}
+.end .end-center .store{
+    width: 220px;
+    font-size: 12px;
+    text-align: left;
+    float: left;
+}
+.end .end-center .buss-edu{
+    width: 220px;
+    float: left;
+}
+.end .end-center .buss{
+    width: 220px;
+    font-size: 12px;
+    text-align: left;
+}
+.end .end-center .edu{
+    width: 220px;
+    font-size: 12px;
+    text-align: left;
+}
+.end .end-center .apple{
+    float: left;
+}
+.end .end-center .value{
+    font-size: 12px;
+    text-align: left;
+}
+.end .end-center .about {
+    font-size: 12px;
+    text-align: left;
+}
+.end .end-center .choose-buy ul li{
+    font-weight: normal;
+    padding-top: 12px;
+}
+.end .end-center .choose-buy ul li a{
+    color: #515154;
+}
+.end .end-center .choose-buy title{
+    color: inherit;
+}
+.end .end-center .servers ul li{
+    font-weight: normal;
+    padding-top: 12px;
+}
+.end .end-center .servers ul li a{
+    color: #515154;
+}
+.end .end-center .counts ul li{
+    font-weight: normal;
+    padding-top: 12px;
+}
+.end .end-center .counts ul li a{
+    color: #515154;
+}
+.end .end-center .store ul li{
+    font-weight: normal;
+    padding-top: 13px;
+}
+.end .end-center .store ul li a{
+    color: #515154;
+}
+.end .end-center .buss ul li{
+    font-weight: normal;
+    padding-top: 12px;
+}
+.end .end-center .buss ul li a{
+    color: #515154;
+}
+.end .end-center .edu ul li{
+    font-weight: normal;
+    padding-top: 12px;
+}
+.end .end-center .edu ul li a{
+    color: #515154;
+}
+.end .end-center .value ul li{
+    font-weight: normal;
+    padding-top: 12px;
+}
+.end .end-center .value ul li a{
+    color: #515154;
+}
+.end .end-center .about ul li{
+    font-weight: normal;
+    padding-top: 12px;
+}
+.end .end-center .about ul li a{
+    color: #515154;
+}
+.end .end-center .more-ch{
+    color: #8D8F92;
+    text-align: left;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.end .end-center .more-ch a{
+    color: #0066CC;
+}
+.end .end-center .more-ch a:hover{
+    text-decoration: underline;
+}
+.end .end-center .more-copy{
+    padding-top: 10px;
+    color: #8D8F92;
+    text-align: left;
+    font-size: 12px;
+}
+.end .end-center .more-copy a{
+    color: #666869;
+}
+.end .end-center .last{
+    padding-top: 10px;
+    color: #666869;
+    text-align: left;
+    font-size: 12px;
+}
+.end .end-center .last a{
+    color: #666869;
+}
+.container1 {
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+    width: 1349px;
+}
+
+.container1 .carousel {
+    margin: 0 auto;
+    height: 500px;
+    width: 1349px;
+    position: relative;
+}
+
+.carousel li {
+    position: absolute;
+    transition: all .6s, z-index .2s;
+}
+.carousel img{
+    width: 100%;
+    height: 500px;
+}
+.container1 .carousel li.left{
+    transform: translateX(0%) scale(.8);
+}
+.container1 .carousel li.center{
+    z-index: 99;
+}
+.container1 .carousel li.right{
+    transform: translateX(0%) scale(.8);
+}
+.container1 .carousel li.unset{
+    transform: translateX(0%) scale(0.8);
+}

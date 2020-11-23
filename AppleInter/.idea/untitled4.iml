@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="TheFirstWebproject" />
+    <orderEntry type="module" module-name="w3cStudy" />
+    <orderEntry type="module" module-name="WebStudy" />
+    <orderEntry type="module" module-name="jida2020" />
+    <orderEntry type="module" module-name="HTML注册登录页面模板" />
+    <orderEntry type="module" module-name="响应式弹窗结合特效" />
+    <orderEntry type="module" module-name="无轮播css" />
+    <orderEntry type="module" module-name="阿里巴巴" />
+    <orderEntry type="module" module-name="AppleInter02" />
+    <orderEntry type="module" module-name="实验" />
+  </component>
+</module>

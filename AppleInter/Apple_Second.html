@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xfb-Apple第二张</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+    <style type="text/css">
+        *,ul,li,a,p{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        .header-area .header-top .container{
+            height: 40px;
+            background-color: #242424;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .header-area .header-top .container .menu-list>li a{
+            color: #CFCFCF;
+            line-height: 40px;
+        }
+        .header-area .header-top .container .menu-list{
+            border: 0px solid #333333;
+            text-align: center;
+        }
+        .header-area .header-top .container .menu-list>li{
+            display: inline-block;
+            margin-right: 100px;
+            position: relative;
+        }
+        /*Mac*/
+        .header-area .header-top .container .menu-list>li .drop-list1{
+            position: absolute;
+            top: 40px;
+            display: none;
+            padding-left: 5px;
+            background-color: #aa4b6b;
+            background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            left: -78px;
+        }
+        .header-area .header-top .container .menu-list>li :hover{
+            color: white;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list1 li{
+            color: #2C80D5;
+        }
+        .header-area .header-top .container .menuMac.menu2.active .drop-list1 {
+            display: block;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list1 a:hover{
+            font-size: 15px;
+            color: #2997FF;
+        }
+        .header-area .header-top .container .menu-list .drop-list1 .mac-list{
+            display: inline-block;
+            width: 1000px;
+            height: 68px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .header-area .header-top .container .menu-list .drop-list1 .mac-list a{
+            font-size: 12px;
+            color: #242424;
+            margin-right: 120px;
+        }
+        /*iPad*/
+        .header-area .header-top .container .menu-list>li .drop-list2{
+            position: absolute;
+            top: 40px;
+            display: none;
+            background-color: #aa4b6b;
+            background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            left: -215px;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list2 li{
+            color: #2C80D5;
+        }
+        .header-area .header-top .container  .menuPad.menu2.active .drop-list2{
+            display: block;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list2 a:hover{
+            font-size: 15px;
+            color: #2997FF;
+        }
+        .header-area .header-top .container .menu-list .drop-list2 .iPad-list{
+            display: inline-block;
+            width: 1000px;
+            height: 68px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .header-area .header-top .container .menu-list .drop-list2 .iPad-list a {
+            font-size: 12px;
+            color: #242424;
+            margin-right: 120px;
+        }
+        /*iPhone*/
+        .header-area .header-top .container .menu-list>li .drop-list3{
+            position: absolute;
+            top: 40px;
+            text-align: left;
+            display: none;
+            padding-left: 5px;
+            background-color: #aa4b6b;
+            background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            left: -355px;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list3 li{
+            color: #2C80D5;
+        }
+        .header-area .header-top .container  .menuPhone.menu2.active .drop-list3{
+            display: block;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list3 a:hover{
+            font-size: 15px;
+            color: #2997FF;
+        }
+        .header-area .header-top .container .menu-list .drop-list3 .iPhone-list{
+            display: inline-block;
+            width: 1000px;
+            height: 69px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .header-area .header-top .container .menu-list .drop-list3 .iPhone-list a {
+            font-size: 12px;
+            color: #F5F5F7;
+            margin-right: 80px;
+        }
+        /*Watch*/
+        .header-area .header-top .container .menu-list>li .drop-list4{
+            position: absolute;
+            top: 40px;
+            text-align: left;
+            display: none;
+            padding-left: 5px;
+            background-color: #aa4b6b;
+            background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            left: -512px;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list4 li{
+            color: #2C80D5;
+        }
+        .header-area .header-top .container  .menuWatch.menu2.active .drop-list4{
+            display: block;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list4 a:hover{
+            font-size: 15px;
+            color: #2997FF;
+        }
+        .header-area .header-top .container .menu-list .drop-list4 .watch-list{
+            display: inline-block;
+            width: 1000px;
+            height: 69px;
+            vertical-align: top;
+        }
+        .header-area .header-top .container .menu-list .drop-list4 .watch-list a {
+            font-size: 12px;
+            color: #242424;
+            margin-right: 70px;
+        }
+        /*Music*/
+        .header-area .header-top .container .menu-list>li .drop-list5{
+            position: absolute;
+            top: 40px;
+            min-width: 100px;
+            text-align: left;
+            display: none;
+            padding-left: 5px;
+            background-color: #aa4b6b;
+            background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+            left: -666px;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list5 li a{
+            color: grey;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list5 li{
+            color: #2C80D5;
+        }
+        .header-area .header-top .container  .menuMusic.menu2.active .drop-list5{
+            display: block;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list5 a:hover{
+            font-size: 15px;
+            color: #2997FF;
+        }
+        .header-area .header-top .container .menu-list .drop-list5 .music-list{
+            display: inline-block;
+            width: 1000px;
+            height: 69px;
+            vertical-align: top;
+        }
+        .header-area .header-top .container .menu-list .drop-list5 .music-list a{
+            font-size: 12px;
+            color: #F5F5F7;
+            margin-right: 50px;
+        }
+        /*购物袋*/
+        .header-area .header-top .container .menu-list>li .drop-list6{
+            position: absolute;
+            top: 40px;
+            min-width: 100px;
+            text-align: left;
+            display: none;
+            padding-left: 5px;
+            left: -18px;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list6 li a{
+            color: #2997FF;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list6 li{
+            color: #2997FF;
+        }
+        .header-area .header-top .container  .menuShop.menu2.active .drop-list6{
+            display: block;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list6 li:hover{
+            color: pink;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list6 a:hover{
+            font-size: 20px;
+            text-decoration: underline;
+            color: pink;
+        }
+        .header-area .header-top .container .menu-list>li .drop-list6 hr{
+            color: black;
+        }
+        .online-buy a:hover{
+            text-decoration: underline ;
+        }
+        .apple-watch-text a:hover{
+            text-decoration: underline;
+        }
+        .apple-se-text a:hover{
+            text-decoration: underline;
+        }
+        .apple-ios-text a:hover{
+            text-decoration: underline;
+        }
+        .apple-ipad-text a:hover{
+            text-decoration: underline;
+        }
+        .apple-mac-text a:hover{
+            text-decoration: underline;
+        }
+        .apple-music-text a:hover{
+            text-decoration: underline;
+        }
+        .apple-iphone-text a:hover {
+            text-decoration: underline;
+        }
+        .bod1 .welcome{
+            width: 100%;
+            height: 550px;
+            background-image: url("welcome.png");
+        }
+        .bod1 .iphone-list .mac-list{
+            display: inline-block;
+            width: 1000px;
+            height: 200px;
+        }
+        .bod1 .iphone-list .mac-list a{
+            margin-right: 100px;
+        }
+        .bod1 .iphone-list .mac-list .mac-name a{
+            color: #333333;
+        }
+        .bod1 .iphone-list .mac-list .mac-name a:hover{
+            text-decoration: underline;
+        }
+        .bod1 .apple-list .mac-list{
+            display: inline-block;
+            width: 1000px;
+            height: 200px;
+        }
+        .bod1 .apple-list .mac-list a{
+            margin-right: 250px;
+        }
+        .bod1 .apple-list .mac-list .mac-name a{
+            color: #0070C9;
+        }
+        .bod1 .apple-list .mac-list .mac-name a:hover{
+            text-decoration: underline;
+        }
+        .bod1 .ios{
+            padding-top: 40px;
+            display: table-cell;
+            vertical-align: middle;
+            margin-right: 40px;
+        }
+        .bod1 .ios .the-fr{
+            width: 400px;
+            float: left;
+            padding-left: 300px;
+            margin-right: 20px;
+        }
+        .bod1 .ios .the-fr a{
+            width: 400px;
+            font-size: 20px;
+        }
+        .bod1 .ios .the-fr .ios-big{
+            text-align: left;
+            font-color: #333333;
+            font-size: 40px;
+        }
+        .bod1 .ios .the-fr .ios-small{
+            text-align: left;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: 微软雅黑;
+            color: #333333;
+        }
+        .bod1 .ios .the-fr .hf{
+            color: #0070C9;
+            text-align: left;
+        }
+        .bod1 .ios .the-se{
+            text-align: center;
+            float: left;
+        }
+        .bod1 .ios .the-fr a:hover{
+            text-decoration: underline;
+        }
+        .bod1 .trade{
+            padding-top: 40px;
+            display: table-cell;
+            vertical-align: middle;
+            margin-right: 40px;
+        }
+        .bod1 .trade .the-fr{
+            width: 400px;
+            float: left;
+        }
+        .bod1 .trade .the-fr a{
+            font-size: 20px;
+        }
+        .bod1 .trade .the-fr .ios-big{
+            word-wrap: break-word;
+            text-align: left;
+            font-color: #333333;
+            font-size: 35px;
+        }
+        .bod1 .trade .the-fr .ios-small{
+            text-align: left;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: 微软雅黑;
+            color: #333333;
+            word-wrap: break-word;
+        }
+        .bod1 .trade .the-fr .hf{
+            color: #0070C9;
+            text-align: left;
+        }
+        .bod1 .trade .the-se{
+            padding-left: 260px;
+            text-align: center;
+            float: left;
+            margin-right: 25px;
+        }
+        .bod1 .trade .the-fr a:hover{
+            text-decoration: underline;
+        }
+        .bod1 .help{
+            width: 100%;
+            height: 350px;
+            background-image: url("help.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bod1 .help .help-p{
+            padding-left: 300px;
+            color: #0070C9;
+            font-size: 20px
+        }
+        .bod1 .help a:hover{
+            text-decoration: underline;
+        }
+        .bod1 .support{
+            padding-top: 40px;
+            display: table-cell;
+            vertical-align: middle;
+            margin-right: 40px;
+        }
+        .bod1 .support .the-fr{
+            float: left;
+        }
+        .bod1 .support .the-fr a{
+            font-size: 20px;
+        }
+        .bod1 .support .the-fr .ios-big{
+            word-wrap: break-word;
+            text-align: left;
+            font-color: #333333;
+            font-size: 35px;
+        }
+        .bod1 .support .the-fr .ios-small{
+            text-align: left;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: 微软雅黑;
+            color: #333333;
+            word-wrap: break-word;
+        }
+        .bod1 .support .the-fr .hf{
+            color: #0070C9;
+            text-align: left;
+        }
+        .bod1 .support .the-se{
+            padding-left: 260px;
+            text-align: center;
+            float: left;
+            margin-right: 25px;
+        }
+        .bod1 .support .the-fr a:hover{
+            text-decoration: underline;
+        }
+        .bod1 .question{
+            padding-top: 40px;
+            display: table-cell;
+            vertical-align: middle;
+            margin-right: 40px;
+        }
+        .bod1 .question .the-fr{
+            width: 400px;
+            float: left;
+            padding-left: 300px;
+            margin-right: 20px;
+        }
+        .bod1 .question .the-fr a{
+            width: 400px;
+            font-size: 20px;
+        }
+        .bod1 .question .the-fr .ios-big{
+            text-align: left;
+            font-color: #4C4C4C;
+            font-size: 40px;
+        }
+        .bod1 .question .the-fr .ios-small{
+            text-align: left;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: 微软雅黑;
+            color: #333333;
+        }
+        .bod1 .question .the-fr .hf{
+            color: #0070C9;
+            text-align: left;
+        }
+        .bod1 .question .the-se{
+            text-align: center;
+            float: left;
+        }
+        .bod1 .question .the-fr a:hover{
+            text-decoration: underline;
+        }
+        .bod1 .care{
+            width: 100%;
+            height: 250px;
+            padding-top: 40px;
+            text-align: center;
+        }
+        .bod1 .body{
+            width: 1000px;
+            word-wrap: break-word;
+            padding-left: 250px;
+        }
+        .bod1 .care .body .the-second{
+            font-weight: inherit;
+        }
+        .bod1 .care .body .the-second a{
+            color: #0070C9;
+        }
+        .bod1 .care .body .the-second a:hover{
+            text-decoration: underline;
+        }
+        .bod1 .china{
+            width: 100%;
+            height: 100px;
+            padding-top: 40px;
+            text-align: center;
+        }
+        .bod1 .china .body a{
+            font-size: 18px;
+            color: #0070C9;
+        }
+        .bod1 .china .body a:hover{
+            text-decoration: underline;
+        }
+        .bod1 .accident{
+            width: 100%;
+            height: 100px;
+            padding-top: 70px;
+            text-align: center;
+        }
+        .bod1 .accident .the-first{
+            font-size: 40px;
+        }
+        .bod1 .accident .body a{
+            font-size: 18px;
+            color: #0070C9;
+        }
+        .bod1 .accident .body a:hover{
+            text-decoration: underline;
+        }
+        .bod1 .server{
+            width: 100%;
+            height: 300px;
+        }
+        .bod1 .server .apple-server{
+            padding-left: 300px;
+            padding-top: 50px;
+        }
+        .bod1 .server .apple-server .the-big{
+            font-size: 20px;
+        }
+        .bod1 .server .apple-server a{
+            color: #0070C9;
+        }
+        .bod1 .server .apple-server a:hover{
+            text-decoration: underline;
+        }
+        .bod2{
+            height: 650px;
+            background-color: #F2F2F2;
+        }
+        .bod2 .touch .body{
+            padding-top: 40px;
+            text-align: center;
+        }
+        .line{
+            width: 980px;
+            padding-left: 270px;
+        }
+        .bod2 .touch .body .touch-one{
+            font-size: 10px;
+            font-weight: normal;
+        }
+        .bod2 .apple{
+            padding-left: 270px;
+        }
+        .bod2 .apple a{
+            color: #555555;
+        }
+        .bod2 .end-center{
+            width: 1100px;
+            height: 540px;
+            margin-left: 250px;
+        }
+        .bod2 .end-center .size{
+            padding-left: 270px;
+            height: 365px;
+        }
+        .bod2 .container{
+            background-color: #F5F5F7;
+            display: table-cell;
+            text-align: center;
+            width: 1920px;
+            height: 570px;
+        }
+        .title{
+            font-size: 12px;
+        }
+        .bod2 .end-center .choose-buy{
+            width: 220px;
+            font-size: 12px;
+            text-align: left;
+            float: left;
+        }
+        .bod2 .end-center .se-cou{
+            width: 220px;
+            float: left;
+        }
+        .bod2 .end-center .servers{
+            font-size: 12px;
+            text-align: left;
+        }
+        .bod2 .end-center .counts{
+            font-size: 12px;
+            text-align: left;
+        }
+        .bod2 .end-center .store{
+            width: 220px;
+            font-size: 12px;
+            text-align: left;
+            float: left;
+        }
+        .bod2 .end-center .buss-edu{
+            width: 220px;
+            float: left;
+        }
+        .bod2 .end-center .buss{
+            width: 220px;
+            font-size: 12px;
+            text-align: left;
+        }
+        .bod2 .end-center .edu{
+            width: 220px;
+            font-size: 12px;
+            text-align: left;
+        }
+        .bod2 .end-center .choose-buy ul li{
+            font-weight: normal;
+            padding-top: 12px;
+        }
+        .bod2 .end-center .choose-buy ul li a{
+            color: #515154;
+        }
+        .bod2 .end-center .choose-buy title{
+            color: inherit;
+        }
+        .bod2 .end-center .servers ul li{
+            font-weight: normal;
+            padding-top: 12px;
+        }
+        .bod2 .end-center .servers ul li a{
+            color: #515154;
+        }
+        .bod2 .end-center .counts ul li{
+            font-weight: normal;
+            padding-top: 12px;
+        }
+        .bod2 .end-center .counts ul li a{
+            color: #515154;
+        }
+        .bod2 .end-center .store ul li{
+            font-weight: normal;
+            padding-top: 13px;
+        }
+        .bod2 .end-center .store ul li a{
+            color: #515154;
+        }
+        .bod2 .end-center .buss ul li{
+            font-weight: normal;
+            padding-top: 12px;
+        }
+        .bod2 .end-center .buss ul li a{
+            color: #515154;
+        }
+        .bod2 .end-center .edu ul li{
+            font-weight: normal;
+            padding-top: 12px;
+        }
+        .bod2 .end-center .edu ul li a{
+            color: #515154;
+        }
+        .bod2 .end-center .apple{
+            padding-left: 0px;
+            float: left;
+        }
+        .bod2 .end-center .value{
+            font-size: 12px;
+            text-align: left;
+        }
+        .bod2 .end-center .about {
+            font-size: 12px;
+            text-align: left;
+        }
+        .bod2 .end-center .value ul li{
+            font-weight: normal;
+            padding-top: 12px;
+        }
+        .bod2 .end-center .value ul li a{
+            color: #515154;
+        }
+        .bod2 .end-center .about ul li{
+            font-weight: normal;
+            padding-top: 12px;
+        }
+        .bod2 .end-center .about ul li a{
+            color: #515154;
+        }
+        .bod2 .end-center .more-copy{
+            padding-top: 10px;
+            color: #8D8F92;
+            padding-left: 270px;
+            font-size: 12px;
+        }
+        .bod2 .end-center .more-copy a{
+            color: #666869;
+        }
+    </style>
+</head>
+<body>
+<!--头部内容-->
+<div class="header-area">
+    <div class="header-top">
+        <div class="container">
+            <ul class="menu-list">
+                <li>
+                    <a href="javascript:;"><i class="fa fa-apple"></i></a></li>
+                <li>
+                    <div class="menuMac menu1">
+                        <a href="javascript:;">Mac</a>
+                    </div>
+                    <div class="menuMac menu2">
+                        <ul class="drop-list1">
+                            <div class="mac-list">
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/mac/home/at/images/familybrowser/macbook_pro_13__ft1pc3lqwd6y_large.svg" width="50px" height="50px">
+                                    MacBook Air
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/mac/home/at/images/familybrowser/macmini__ephgbbctwkk2_large.svg" width="50px" height="50px">
+                                    Mac mini
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/mac/home/at/images/familybrowser/imac_pro__xnvauz5hcf6i_large.svg" width="50px" height="50px">
+                                    iMac Pro
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    <script src="js/jquery.min.js" type="text/javascript"></script>
+                    <script  type="text/javascript">
+                        document.querySelector('.menuMac.menu1').onclick=function (){
+                            var $menuActive = $('.menuMac.menu2');
+                            if($menuActive.attr('class') == 'menuMac menu2'){
+                                $menuActive.attr('class', 'menuMac menu2 active');
+                            }else{
+                                $menuActive.attr('class', 'menuMac menu2');
+                            }
+                        }
+                    </script>
+                </li>
+                <li>
+                    <div class="menuPad menu1">
+                        <a href="javascript:;">iPad</a>
+                    </div>
+                    <div class="menuPad menu2">
+                        <ul class="drop-list2">
+                            <div class="iPad-list">
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/ipad/home/bf/images/chapternav/ipadpro_light__b2axwqwl0seq_large.svg" width="50px" height="50px">
+                                    iPad Pro
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/mac/home/at/images/familybrowser/macmini__ephgbbctwkk2_large.svg" width="50px" height="50px">
+                                    iPad Air
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/mac/home/at/images/familybrowser/imac_pro__xnvauz5hcf6i_large.svg" width="50px" height="50px">
+                                    iPad
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/mac/home/at/images/familybrowser/imac_pro__xnvauz5hcf6i_large.svg" width="50px" height="50px">
+                                    iPad mini
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    <script  type="text/javascript">
+                        document.querySelector('.menuPad.menu1').onclick=function (){
+                            var $menuActive = $('.menuPad.menu2');
+                            if($menuActive.attr('class') == 'menuPad menu2'){
+                                $menuActive.attr('class', 'menuPad menu2 active');
+                            }else{
+                                $menuActive.attr('class', 'menuPad menu2');
+                            }
+                        }
+                    </script>
+                </li>
+                <li>
+                    <div class="menuPhone menu1">
+                        <a href="javascript:;">iPhone</a>
+                    </div>
+                    <div class="menuPhone menu2">
+                        <ul class="drop-list3">
+                            <div class="iPhone-list">
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/iphone/home/ao/images/chapternav/iphone_12_dark__d7asodlag7e6_large.svg" width="50px" height="50px">
+                                    iPhone 12
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/iphone/home/ao/images/chapternav/iphone_se_dark__b1b8q1iya5o2_large.svg" width="50px" height="50px">
+                                    iPhone SE
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/iphone/home/ao/images/chapternav/iphone_11_dark__di5n0jory1me_large.svg" width="50px" height="50px">
+                                    iPhone 11
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/iphone/home/ao/images/chapternav/iphone_xr_dark__ft3blnh7c6q2_large.svg" width="50px" height="50px">
+                                    iPhone xR
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/iphone/home/ao/images/chapternav/iphone_xr_dark__ft3blnh7c6q2_large.svg" width="50px" height="50px">
+                                    iPhone x
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    <script  type="text/javascript">
+                        document.querySelector('.menuPhone.menu1').onclick=function (){
+                            var $menuActive = $('.menuPhone.menu2');
+                            if($menuActive.attr('class') == 'menuPhone menu2'){
+                                $menuActive.attr('class', 'menuPhone menu2 active');
+                            }else{
+                                $menuActive.attr('class', 'menuPhone menu2');
+                            }
+                        }
+                    </script>
+                </li>
+                <li>
+                    <div class="menuWatch menu1">
+                        <a href="javascript:;">Watch</a>
+                    </div>
+                    <div class="menuWatch menu2">
+                        <ul class="drop-list4">
+                            <div class="watch-list">
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/watch/home/ad/images/overview/icons/watch_nav_se__en4ntkxi5guq_large.svg" width="50px" height="50px">
+                                    Watch Series6
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/watch/home/ad/images/overview/icons/watch_nav_series_2__efs7961t4e2q_large.svg" width="50px" height="50px">
+                                    Watch SE
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/watch/home/ad/images/overview/icons/watch_nav_nike__bxk9igzhjuuu_large.svg" width="50px" height="50px">
+                                    Watch Nike
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/watch/home/ad/images/overview/icons/watch_nav_hermes__1cpmu6xs8eq6_large.svg" width="50px" height="50px">
+                                    Watch Hermes
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/watch/home/ad/images/overview/icons/watch_nav_compare__b9nnoiqjkxki_large.svg" width="50px" height="50px">
+                                    Watch 配件
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    <script  type="text/javascript">
+                        document.querySelector('.menuWatch.menu1').onclick=function (){
+                            var $menuActive = $('.menuWatch.menu2');
+                            if($menuActive.attr('class') == 'menuWatch menu2'){
+                                $menuActive.attr('class', 'menuWatch menu2 active');
+                            }else{
+                                $menuActive.attr('class', 'menuWatch menu2');
+                            }
+                        }
+                    </script>
+                </li>
+                <li>
+                    <div class="menuMusic menu1">
+                        <a href="javascript:;">Music</a>
+                    </div>
+                    <div class="menuMusic menu2">
+                        <ul class="drop-list5">
+                            <div class="music-list">
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/music/o/images/chapternav/apple_music_dark__e7el1dqc7ouq_large.svg" width="50px" height="50px">
+                                    Apple Music
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/music/o/images/chapternav/airpods_dark__ev9iwonn6526_large.svg" width="50px" height="50px">
+                                    AirPods
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/music/o/images/chapternav/airpods_pro_dark__fq982ukhrn2a_large.svg" width="50px" height="50px">
+                                    AirPods Pro
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/music/o/images/chapternav/homepod_dark__rdq3959n9iqq_large.svg" width="50px" height="50px">
+                                    HomePod
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/music/o/images/chapternav/ipod_touch_dark__cnll1unb2no2_large.svg" width="50px" height="50px">
+                                    iPod touch
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://www.apple.com.cn/v/music/o/images/chapternav/beats_dark__cpyjta83l9jm_large.svg" width="50px" height="50px">
+                                    Beats
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    <script  type="text/javascript">
+                        document.querySelector('.menuMusic.menu1').onclick=function (){
+                            var $menuActive = $('.menuMusic.menu2');
+                            if($menuActive.attr('class') == 'menuMusic menu2'){
+                                $menuActive.attr('class', 'menuMusic menu2 active');
+                            }else{
+                                $menuActive.attr('class', 'menuMusic menu2');
+                            }
+                        }
+                    </script>
+                </li>
+                <li>
+                    <a href="Apple_Second.html">技术支持</a></li>
+                <li>
+                    <div class="menuShop menu1">
+                        <a href="javascript:;"><i class="fa fa-shopping-bag"></i></i></a>
+                    </div>
+                    <div class="menuShop menu2">
+                        <ul class="drop-list6">
+                            <li><i class="fa fa-shopping-bag"></i>&nbsp;&nbsp;&nbsp;<a href="javascript:;">购物袋</a></li>
+                            <li><i class="fa fa-heart-o"></i>&nbsp;&nbsp;&nbsp;<a href="javascript:;">收藏</a></li>
+                            <li><i class="fa fa-th-large"></i>&nbsp;&nbsp;&nbsp;<a href="javascript:;">订单</a></li>
+                            <li><i class="fa fa-snowflake-o"></i>&nbsp;&nbsp;&nbsp;<a href="javascript:;">账户</a></li>
+                            <li><i class="fa fa-user-circle-o"></i>&nbsp;&nbsp;&nbsp;<a href="javascript:;">登录</a></li>
+                        </ul>
+                    </div>
+                    <script  type="text/javascript">
+                        document.querySelector('.menuShop.menu1').onclick=function (){
+                            var $menuActive = $('.menuShop.menu2');
+                            if($menuActive.attr('class') == 'menuShop menu2'){
+                                $menuActive.attr('class', 'menuShop menu2 active');
+                            }else{
+                                $menuActive.attr('class', 'menuShop menu2');
+                            }
+                        }
+                    </script>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--中间内容-->
+    <div class="bod1">
+        <div class="welcome"></div>
+        <div>
+            <ul class="iphone-list">
+                <div>&nbsp;</div><div>&nbsp;</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="mac-list">
+                    <div>
+                    <a href="javascript:;">
+                        <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_iphone_2x.png" width="80px" height="80px"></a>
+                    <a href="javascript:;">
+                        <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_imac_2x.png" width="80" height="80px"></a>
+                    <a href="javascript:;">
+                        <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_ipad_2x.png" width="80px" height="80px"></a>
+                    <a href="javascript:;">
+                        <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_apple_watch_2x.png" width="80px" height="80px"></a>
+                    <a href="javascript:;">
+                        <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productdrawer_applemusic_2x.png" width="80px" height="80px"></a>
+                    </div><br>
+                    <div class="mac-name">
+                    &nbsp;&nbsp;&nbsp;<a href="javascript:;">iPhone</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:;">Mac</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:;">iPad</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:;">Watch</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:;">Music</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <ul class="apple-list">
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="mac-list">
+                    <div>
+                        <a href="javascript:;">
+                            <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/promo_icons/promo-icon-homepage-password_2x.png" width="80px" height="80px"></a>
+                        <a href="javascript:;">
+                            <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/promo_icons/promo-icon-homepage-repair_2x.png" width="80" height="80px"></a>
+                        <a href="javascript:;">
+                            <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/promo_icons/promo-icon-homepage-subscriptions_2x.png" width="80px" height="80px"></a>
+                    </div><br>
+                    <div class="mac-name">
+                        <a href="javascript:;">忘记Apple</a>
+                        <a href="javascript:;">Apple 维修</a>
+                        <a href="javascript:;">账单和订阅</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <hr>
+        <div class="ios">
+            <div class="the-fr">
+                <h2 class="ios-big">更新至 iOS 14</h2>
+                <div>&nbsp;</div><div>&nbsp;</div>
+                <h3 class="ios-small">向屏幕添加小组件，自动整理您的App，并尽情享受使用"信息"App的乐趣。</h3>
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                <a href="javascript:;" class="hf">获取 iOS 14 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="the-se">
+                <a href="javascript:;">
+                    <img src="https://support.apple.com/content/dam/edam/applecare/images/zh_CN/psp/featured-section-update-ios_2x.jpg" width="500px" height="300px">
+                </a>
+            </div>
+        </div>
+        <div>&nbsp;</div><div>&nbsp;</div>
+        <hr>
+        <div class="trade">
+            <div class="the-se">
+                <a href="javascript:;">
+                    <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/featured-section-give-back-trade-in_2x.jpg" width="500px" height="300px">
+                </a>
+            </div>
+            <div class="the-fr">
+                <h2 class="ios-big">通过 Apple Trade In 换购计划进行折抵换购</h2>
+                <div>&nbsp;</div><div>&nbsp;</div>
+                <h3 class="ios-small">向屏幕添加小组件，自动整理您的App，并尽情享受使用"信息"App的乐趣。</h3>
+
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                <a href="javascript:;" class="hf">进一步了解 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+        <div class="help">
+            <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+            <a href="javascript:;" class="help-p">获取支持  <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+        <div>&nbsp;</div>
+        <div class="support">
+            <div class="the-se">
+                <a href="javascript:;">
+                    <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/repair/applecare-products_2x.png" width="420px" height="220px">
+                </a>
+            </div>
+            <div class="the-fr">
+                <h2 class="ios-big">来自 Apple 专家的服务与支持</h2>
+                <div>&nbsp;</div><div>&nbsp;</div>
+                <h3 class="ios-small">AppleCare 产品提供来自 Apple 的额外硬件服务选项和专家<br>技术支持。</h3>
+
+                <div>&nbsp;</div><div>&nbsp;</div>
+                <a href="javascript:;" class="hf">了解 AppleCare 计划 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <hr>
+        <div class="question">
+            <div class="the-fr">
+                <div>&nbsp;</div><div>&nbsp;</div>
+                <h2 class="ios-big">有问题？</h2>
+                <div>&nbsp;</div><div>&nbsp;</div>
+                <h3 class="ios-small">问问大家。我们的 Apple 支持社区可以协助您找到答案。</h3>
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                <a href="javascript:;" class="hf">在社区提问 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="the-se">
+                <a href="javascript:;">
+                    <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/repair/contentlink-communities_2x.png" width="500px" height="300px">
+                </a>
+            </div>
+        </div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <hr>
+        <div class="care">
+            <div class="body">
+            <h2 class="the-first">留心假冒部件</h2>
+                <div>&nbsp;</div>
+            <h3 class="the-second">某些假冒和第三方的电源适配器及电池可能设计不当，有可能会导致安全问题。为了确保您在电池更换时能够获得正品 Apple 电池，我们建议您前往
+                <a href="javascript:;">Apple Store 商店</a>
+                或
+                <a href="javascript:;">Apple 授权服务提供商</a>
+                处。如果您需要更换一个新的适配器来为您的 Apple 设备充电，我们建议您选择 Apple 的电源适配器。<br><br>
+                此外，非正品显示屏更换件可能会使画质受损，并且可能无法正常工作。Apple 认证屏幕维修由可信赖的专家进行，他们会使用 Apple 正品部件。</h3>
+                <div>&nbsp;</div><div>&nbsp;</div>
+                <hr>
+            </div>
+        </div>
+        <div class="china">
+            <div class="body">
+                <h2 class="the-first">了解 Apple 在中国大陆的服务和保修政策</h2>
+                <div>&nbsp;</div>
+                <a href="javascript:;">了解报修和服务选项 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <div>&nbsp;</div><div>&nbsp;</div>
+                <hr>
+            </div>
+        </div>
+        <div class="accident">
+            <div class="body">
+                <h2 class="the-first">有关 iPhone 及意外关机的信息</h2>
+                <div>&nbsp;</div>
+                <a href="javascript:;">进一步了解 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <div>&nbsp;</div><div>&nbsp;</div>
+            </div>
+        </div>
+        <div>&nbsp;</div><div>&nbsp;</div>
+        <hr>
+        <div class="server">
+            <div class="apple-server">
+                <h4 class="the-big">Apple 服务计划</h4><br>
+                <a href="javascript:;">适用于黑屏问题的 iPad Air（第 3 代）服务计划</a><br><br>
+                <a href="javascript:;">适用于 iPhone XS、iPhone XS Max 和 iPhone XR 的智能电池壳更换计划</a><br><br>
+                <a href="javascript:;">针对“无法开机”问题的 iPhone 6s 和 iPhone 6s Plus 服务计划</a><br><br>
+                <a href="javascript:;">15 英寸 MacBook Pro 电池召回计划</a><br><br>
+                <a href="javascript:;">Apple 三插交流电源插头转换器召回计划</a><br><br>
+                <a href="javascript:;">查看所有计划 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+    </div>
+<footer>
+    <div class="bod2">
+        <div class="touch">
+            <div class="body">
+            <h2 class="touch-one">与 Apple 支持保持联系</h2><br>
+            <a href="javascript:;">
+                <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/more_icons/social-icon-weibo.png"/>
+            </a>
+            <br><br>
+            <div class="line"><hr></div>
+            </div>
+        </div>
+        <br>
+        <div class="apple">
+            <a href="javascript:;"><i class="fa fa-apple" aria-hidden="true"></i>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;支持</a>
+        </div>
+        <dv class="end-center">
+        <div class="size">
+            <div class="choose-buy">
+                <h3 class="title">选购及了解</h3>
+                <ul>
+                    <li><a href="">Mac</a></li>
+                    <li><a href="">iPad</a></li>
+                    <li><a href="">iPhone</a></li>
+                    <li><a href="">Watch</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href>AirPods</a></li>
+                    <li><a href="">HomePod</a></li>
+                    <li><a href="">iPod&nbsp;touch</a></li>
+                    <li><a href="">配件</a></li>
+                    <li><a href="">App&nbsp;Store&nbsp;充值卡</a></li>
+                </ul>
+            </div>
+            <div class="se-cou">
+                <div class="servers">
+                    <h3 class="title">服务</h3>
+                    <ul>
+                        <li>
+                            <a href="">Apple Music</a>
+                        </li>
+                        <li>
+                            <a href="">iCloud</a>
+                        </li>
+                        <li>
+                            <a href="">Apple&nbsp;Pay</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div class="counts">
+                    <h3 class="title">账户</h3>
+                    <ul>
+                        <li>
+                            <a href="">管理你的&nbsp;Apple&nbsp;ID</a>
+                        </li>
+                        <li>
+                            <a href="">Apple&nbsp;Store&nbsp;账户</a>
+                        </li>
+                        <li>
+                            <a href="">iCloud.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="store">
+                <h3 class="title">Apple&nbsp;Store&nbsp;商店</h3>
+                <ul>
+                    <li><a href="javascript:;">查找零售店</a></li>
+                    <li><a href="javascript:;">在线选购</a></li>
+                    <li><a href="javascript:;">Genius&nbsp;Bar&nbsp;天才吧</a></li>
+                    <li><a href="javascript:;">Today&nbsp;at&nbsp;Apple</a></li>
+                    <li><a href="javascript:;">Apple&nbsp;夏令营</a></li>
+                    <li><a href="javascript:;">Apple&nbsp;Store&nbsp;App</a></li>
+                    <li><a href="javascript:;">翻新和优惠</a></li>
+                    <li><a href="javascript:;">分期付款</a></li>
+                    <li><a href="javascript:;">Apple&nbsp;Trade&nbsp;换购计划</a></li>
+                    <li><a href="javascript:;">订单状态</a></li>
+                    <li><a href="javascript:;">选购帮助</a></li>
+                </ul>
+            </div>
+            <div class="buss-edu">
+                <div class="buss">
+                    <h3 class="title">商务应用</h3>
+                    <ul>
+                        <li>
+                            <a href="">Apple&nbsp;与商务</a>
+                        </li>
+                        <li>
+                            <a href="">商务选购</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div class="edu">
+                    <h3 class="title">教育应用</h3>
+                    <ul>
+                        <li>
+                            <a href="">Apple&nbsp;与教育</a>
+                        </li>
+                        <li>
+                            <a href="">高校生选购</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="apple">
+                <div class="value">
+                    <h3 class="title">Apple&nbsp;价值观</h3>
+                    <ul>
+                        <li>
+                            <a href="">辅助功能</a>
+                        </li>
+                        <li>
+                            <a href="">环境责任</a>
+                        </li>
+                        <li>
+                            <a href="">隐私</a>
+                        </li>
+                        <li>
+                            <a href="">供应商责任</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div class="about">
+                    <h3 class="title">关于&nbsp;Apple</h3>
+                    <ul>
+                        <li>
+                            <a href="">Newsroom</a>
+                        </li>
+                        <li>
+                            <a href="">Apple&nbsp;管理层</a>
+                        </li>
+                        <li>
+                            <a href="">工作机会</a>
+                        </li>
+                        <li>
+                            <a href="">创造就业机会</a>
+                        </li>
+                        <li>
+                            <a href="">活动</a>
+                        </li>
+                        <li>
+                            <a href="">联系&nbsp;Apple</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <br>
+            <div class="line"><hr></div>
+            <div class="more-copy">
+                Copyright ©
+
+                2020
+                Apple Inc. 保留所有权利。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="javascript:;">隐私政策</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="javascript:;">使用条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="javascript:;">销售政策</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="javascript:;">法律信息</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="javascript:;">网站地图</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            </div>
+        </dv>
+    </div>
+</footer>
+</body>
+</html>
